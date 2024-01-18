@@ -1,0 +1,83 @@
+.navegacion {
+    width: 1290px;
+    margin: 30px auto;
+    background: #e3089a;
+    border-radius: 50px;
+    box-shadow: 0 25px 20px -20px black;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    width: 23%;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #815a33;
+    transition: all .3s;
+}
+
+/*submenu*/
+.submenu {
+    position: absolute;
+    background: #1a1204;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #918367;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* acaba el menu */
+.mapa {
+  float: center;
+  margin-top: 50px;
+}
+
+.ubicacion{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.referencias {
+    height: 5%;
+	background-color:#000000;
+	clear: both;
+	bottom: 0px;
+    left: 0px;
+	width: 100%;
+    padding: 40px;
+    padding-top: 18px;
+    padding-left: 18px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+   color: beige 
+}

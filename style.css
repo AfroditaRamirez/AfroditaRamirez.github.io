@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+body {
+    background: #ffffff;
+}
+
+.navegacion {
+    width: 1290px;
+    margin: 30px auto;
+    background: #e3089a;
+    border-radius: 50px;
+    box-shadow: 0 25px 20px -20px rgb(137, 8, 81);
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    width: 23%;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #080500;
+    font-family: 'Amita', serif;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #815a33;
+    transition: all .3s;
+}
+
+/*submenu*/
+.submenu {
+    position: absolute;
+    background: #1a1204;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #918367;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* acaba el menu */
+.logo {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background: #e6b9dd;
+    color: #fffdfd;
+    border-radius:  10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.input-box input{
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #fffcfa;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #f9f5f0;
+    padding: 20px 45px 8px 15px;
+}
+
+.input-box input::placeholder{
+    color: #f8f4fb;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    padding-bottom: 50px;
+}
+
+.remember-forgot label input{
+    accent-color: #fffdfd;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fafafa;
+    text-decoration: none;
+    padding-bottom: 0px;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #f9f5f0;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 16px;
+    color: #080500;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #f9f5f0;
+    text-decoration: none ;
+    font-weight: 600;
+}
+
+.register-link p a:hover   {
+    text-decoration: underline;
+}
+
+.letra {
+    font-family: 'Montez', cursive;
+    font-size: 70px;
+}
+
+.video {
+    position: center;
+    padding-left: 29%;
+    padding-right: 28%;
+    padding-top: 60px;
+    padding-bottom: 10%;
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mariposas-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mariposas {
+    background-color: #f9f5f0;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mariposas img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    margin-top: 50px;
+    transition: transform 0.3s;
+}
+
+.mariposas h3 {
+    font-size: 18px;
+    color: #c7a17a;
+    margin-top: 10px;
+}
+
+.mariposas p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.mariposas .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff002b;
+    margin-top: 10px;
+}
+
+.mariposas .add-to-cart {
+    background-color: #ff0026;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mariposas .add-to-cart:hover {
+    background-color: #c7a17a;
+}
+
+.mariposas:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.mariposas img:hover {
+    transform: scale(1.1);
+}
+
+.cart-container {
+    background-color: #c7a17a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    float: right;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.cart h2 {
+    font-size: 24px;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cart .remove-item {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart .remove-item:hover {
+    background-color: #c7a17a;
+}
+
+.calaca {
+    position: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 60px;
+    padding-bottom: 10%;
+}
+
+.referencias {
+    height: 5%;
+	background-color:#000000;
+	clear: both;
+	bottom: 0px;
+    left: 0px;
+	width: 100%;
+    padding: 40px;
+    padding-top: 18px;
+    padding-left: 18px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+   color: beige 
+}
